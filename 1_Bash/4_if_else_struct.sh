@@ -1,0 +1,10 @@
+if TEST-COMMAND1
+then
+  STATEMENTS1
+elif TEST-COMMAND2
+then
+  STATEMENTS2
+else
+  STATEMENTS3
+fi
+
