@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+
+int main()
+{
+    std::ifstream ifile("test.txt", std::ios::in);
+    if (ifile.is_open())
+    {
+        std::string line;
+        std::getline(ifile, line);
+        std::cout << line << std::endl;
+        
+        ifile.seekg(0, std::ios::beg);
+        
+        char c;
+        while (ifile.get(c))
+        {
+            std::cout << c;
+        }
+    }
+  
+    return 0;
+}
+
+
